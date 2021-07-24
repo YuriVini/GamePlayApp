@@ -8,13 +8,14 @@ import {
 } from 'react-native';
 import { styles } from './styles';
 import { categories } from '../../utils/categories';
-import { Category } from '../../Category';
+import { Category } from '../Category';
 
 type Props = {
     categorySelected: string;
+    setCategory: (categoryId: string) => void;
 }
 
-export function CategorySeletc({categorySelected}: Props){
+export function CategorySeletc({categorySelected, setCategory}: Props){
     return(
         <ScrollView 
             horizontal
@@ -29,6 +30,7 @@ export function CategorySeletc({categorySelected}: Props){
                         title={category.tittle}
                         icon={category.icon}
                         checked={category.id === categorySelected}
+                        onPress={() => setCategory(category.id)}
                     />
                 ))
             }
