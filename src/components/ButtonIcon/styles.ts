@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
         color: theme.colors.heading,
         fontSize: 15,
         textAlign: 'center',
+        fontFamily: theme.fonts.text500,
     },
     iconWrapper: {
         width: 56,
