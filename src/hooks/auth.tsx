@@ -5,13 +5,13 @@ import React,
     useState,
     ReactNode,
 } from "react";
-import {
-    SCOPE,
-    CDN_IMAGE,
-    CLIENT_ID,
-    REDIRECT_URI,
-    RESPONSE_TYPE,
-} from '../configs/discordAuth';
+
+const { SCOPE } = process.env;
+const { CDN_IMAGE } = process.env;
+const { CLIENT_ID } = process.env;
+const { REDIRECT_URI } = process.env;
+const { RESPONSE_TYPE } = process.env;
+
 import { api } from '../services/api';
 
 import * as AuthSession from 'expo-auth-session';
