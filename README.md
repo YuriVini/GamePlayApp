@@ -1,5 +1,8 @@
 # GamePlayApp
 
+![cover](https://user-images.githubusercontent.com/50464472/128382404-0633b744-6dae-43cc-af81-985acc7ecb1b.png)
+
+
 💻 Projeto
 
 
